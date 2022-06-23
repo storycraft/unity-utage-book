@@ -1,0 +1,26 @@
+[package]
+name = "unity-utage-book"
+description = "Library for reading and writing unity Utage visual novel engine book scenario file"
+version = "0.1.0"
+edition = "2021"
+authors = [ "storycraft <storycraft@pancake.sh>" ]
+license = "MIT"
+
+[features]
+serde = [ "dep:serde", "serde/derive" ]
+
+[[example]]
+name = "extract"
+required-features = ["serde"]
+
+[[example]]
+name = "repack"
+required-features = ["serde"]
+
+[dependencies]
+byteorder = "1.4.3"
+
+serde = { version = "1.0", optional = true }
+
+[dev-dependencies]
+serde_json = "1.0"

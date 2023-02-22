@@ -14,6 +14,14 @@ name = "extract"
 required-features = ["serde"]
 
 [[example]]
+name = "create_xlsx_patch"
+required-features = ["serde"]
+
+[[example]]
+name = "patch_xlsx"
+required-features = ["serde"]
+
+[[example]]
 name = "repack"
 required-features = ["serde"]
 
@@ -24,3 +32,5 @@ serde = { version = "1.0", optional = true }
 
 [dev-dependencies]
 serde_json = "1.0"
+rust_xlsxwriter = "0.26.0"
+calamine = "0.19.1"
